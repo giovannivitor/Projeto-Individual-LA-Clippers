@@ -1,5 +1,6 @@
 *{
-    font-family: 'Playfair Display', serif;;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 body{
@@ -27,6 +28,7 @@ body{
 
 .navbar .container ul {
     width: 530px;
+    font-size: larger;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -58,7 +60,7 @@ body{
 .banner .container{
     justify-content: center;
     align-items: center;
-    height: 610px;
+    height: 100%;
     background-image: url(assets/imagemInicio.avif);
     background-size: cover;
     
@@ -71,14 +73,14 @@ body{
 
 }
 
-.texto{
+.titulo{
     display: flex;
     color: white;
     flex-direction: column;
     margin-left: 10px;
     justify-content: center;
     text-align: left;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 
