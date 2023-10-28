@@ -1,0 +1,89 @@
+*{
+    font-family: 'Playfair Display', serif;;
+}
+
+body{
+    margin: 0;
+}
+
+.navbar{
+    background-color: rgb(15, 23, 136);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+.navbar .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container ul {
+    width: 530px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar .container ul a{
+    text-decoration: none;
+    color: white;
+ 
+    
+}
+
+/*.logo {
+    margin: 0 auto; /* Define as margens esquerda e direita como automáticas 
+    max-width: 200px; /* Ajuste a largura máxima conforme necessário */
+
+.header .container a:hover {
+    color: white;
+    cursor: pointer;
+    }
+
+.banner {
+    background-color: rgb(33, 40, 143);
+    background-size: cover;
+    
+}
+
+.banner .container{
+    justify-content: center;
+    align-items: center;
+    height: 610px;
+    background-image: url(assets/imagemInicio.avif);
+    background-size: cover;
+    
+}
+
+.card {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+
+}
+
+.texto{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+    text-align: left;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
