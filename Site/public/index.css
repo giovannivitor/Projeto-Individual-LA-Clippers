@@ -1,5 +1,5 @@
 *{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Old Standard TT', serif;;
 
 }
 
@@ -8,7 +8,7 @@ body{
 }
 
 .navbar{
-    background-color: rgb(15, 23, 136);
+    background-color:  #224ea7;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,7 +52,7 @@ body{
     }
 
 .banner {
-    background-color: rgb(33, 40, 143);
+    background-color: #224ea7;
     background-size: cover;
     
 }
@@ -83,6 +83,27 @@ body{
     opacity: 0.7;
 }
 
+.Sobre {
+    background-color: white;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    
+    border-top: white 3px solid;
+    border-bottom: white 3px solid;
+}
+
+.box{
+    background-color: #ecf3f1;
+    width: 100%;
+}
+
+
+.titulo2 {
+    color: #000;
+    margin: 0;
+    text-align: center;
+    
+}
 
 
 
