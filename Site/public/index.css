@@ -1,14 +1,14 @@
-*{
-    font-family: 'Old Standard TT', serif;;
-
+@font-face {
+    font-family: Vogue Font;
+    src: url(assets/Vogue.ttf);
 }
 
-body{
+body {
     margin: 0;
 }
 
-.navbar{
-    background-color:  #224ea7;
+.navbar {
+    background-color: #224ea7;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@ body{
     opacity: 0.9;
 }
 
-.navbar .container{
+.navbar .container {
     width: 80%;
     margin: auto;
     display: flex;
@@ -33,13 +33,12 @@ body{
     display: flex;
     justify-content: space-between;
     color: white;
+    margin-right: 180px;
 }
 
-.navbar .container ul a{
+.navbar .container ul a {
     text-decoration: none;
     color: white;
- 
-    
 }
 
 /*.logo {
@@ -49,21 +48,21 @@ body{
 .header .container a:hover {
     color: white;
     cursor: pointer;
-    }
+}
 
 .banner {
     background-color: #224ea7;
     background-size: cover;
-    
+
 }
 
-.banner .container{
+.banner .container {
     justify-content: center;
     align-items: center;
     height: 100%;
     background-image: url(assets/imagemInicio.avif);
     background-size: cover;
-    
+
 }
 
 .card {
@@ -73,37 +72,43 @@ body{
 
 }
 
-.titulo{
+.titulo {
     display: flex;
     color: white;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 40px;
     justify-content: center;
     text-align: left;
     opacity: 0.7;
 }
 
-.Sobre {
+.banner-2 {
     background-color: white;
     padding-bottom: 15px;
     padding-top: 30px;
-    
-    border-top: white 3px solid;
-    border-bottom: white 3px solid;
-}
-
-.box{
-    background-color: #ecf3f1;
-    width: 100%;
 }
 
 
-.titulo2 {
+.tituloHistoria{
     color: #000;
     margin: 0;
     text-align: center;
+
+}
+.imagemBufallo img{
+    width: 35%;
+    margin-left: 30px;
+}
+
+.texto-direita p {
+    position: relative;
+    top: -250px; /* Ajuste conforme necessário. */
+    display: flex;
+    width: 30%;
+    margin-left: 600px;
     
 }
+
 
 
 
