@@ -41,12 +41,6 @@ body {
     color: white;
 }
 
-
-.header .container a:hover {
-    color: white;
-    cursor: pointer;
-}
-
 .banner {
     background-color: #224ea7;
     background-size: cover;
@@ -175,7 +169,7 @@ body {
 .tituloNoticia {
     color: #224ea7;
     text-align: center;
-    margin-bottom: 20px; 
+    margin-bottom: 25px; 
 }
 
 .ImagensNoticias img {
@@ -184,12 +178,12 @@ body {
     height: auto; 
     border-radius: 2%;
     margin: 20px;
-    margin-top: -10px;
+    margin-top: 10px;
 
 }
 
 .botaoVejaMais {
-    min-width: 100px;
+    min-width: 80px;
     height: 30px;
     color: #224ea7;;
     padding: 5px 10px;
@@ -202,13 +196,13 @@ body {
     border-radius: 20px;
     border: 2px solid #224ea7;;
     background: #f5f2f2;
-    margin-top: -350px;
-    margin-left: 70%;
+    margin-top: -48px;
+    margin-left: 80%;
 
   }
   .botaoVejaMais:hover {
     background: #224ea7;;
-    color: #4433ff
+    color: #224ea7
   }
 
   .iconeNoticias{
