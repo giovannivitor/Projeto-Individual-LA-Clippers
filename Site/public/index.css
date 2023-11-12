@@ -41,9 +41,6 @@ body {
     color: white;
 }
 
-/*.logo {
-    margin: 0 auto; /* Define as margens esquerda e direita como automáticas 
-    max-width: 200px; /* Ajuste a largura máxima conforme necessário */
 
 .header .container a:hover {
     color: white;
@@ -82,33 +79,235 @@ body {
     opacity: 0.7;
 }
 
-.banner-2 {
+.banner-2 .flex-container{
     background-color: white;
-    padding-bottom: 15px;
+    padding-bottom: 1px;
     padding-top: 30px;
 }
 
 
 .tituloHistoria{
-    color: #000;
+    color: #C8102E;
     margin: 0;
     text-align: center;
 
 }
 .imagemBufallo img{
-    width: 35%;
-    margin-left: 30px;
+    width: 20%;
+    margin-left: 150px;
+    margin-top: 4%;
 }
 
 .texto-direita p {
     position: relative;
-    top: -250px; /* Ajuste conforme necessário. */
+    top: -290px; 
     display: flex;
     width: 30%;
-    margin-left: 600px;
+    margin-left: 720px;
+    font-size: large;
+}
+
+.anoBufallo img{
+    width: 39%;
+    position: absolute;
+    bottom: -38%;
+    left: 13%;
     
 }
 
+.ImagemSanDiego img{
+    width: 20%;
+    margin-left: 800px;
+    margin-top: -40%;
+}
+
+.anoSanDiego img{
+    width: 39%;
+    position: absolute;
+    bottom: -87%;
+    right: 19%;
+}
+
+.texto-esquerda p {
+    position: relative;
+    top: -250px;
+    display: flex;
+    width: 30%;
+    margin-left: 150px;
+    font-size: large;
+    
+}
+
+.ImagemLAclippers img{
+    width: 20%;
+    margin-left: 150px;
+    margin-top: -10%;
+}
+
+.texto-direita-2 p {
+    position: relative;
+    top: -240px; 
+    display: flex;
+    width: 30%;
+    margin-left: 720px;
+    font-size: large;
+}
+
+.anoLAclippers img{
+    width: 39%;
+    position: absolute;
+    bottom: -143%;
+    left: 13%;
+    
+}
+.banner-3 .container {
+    background-color: #f5f2f2;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    
+    
+}
+
+.tituloNoticia {
+    color: #224ea7;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.ImagensNoticias img {
+    width: 180%;
+    max-width: 260px; 
+    height: auto; 
+    border-radius: 2%;
+    margin: 20px;
+    margin-top: -10px;
+
+}
+
+.botaoVejaMais {
+    min-width: 100px;
+    height: 30px;
+    color: #224ea7;;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    display: flex;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #224ea7;;
+    background: #f5f2f2;
+    margin-top: -350px;
+    margin-left: 70%;
+
+  }
+  .botaoVejaMais:hover {
+    background: #224ea7;;
+    color: #4433ff
+  }
+
+  .iconeNoticias{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-4 .container {
+    background-color: white;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    
+    
+}
+
+.banner-4 .container {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+.TituloSobreMim {
+    color: #224ea7;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+  
+  .content-Sobremim {
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+  }
+  
+  .texto p {
+    font-size: 1.1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 150px;
+    font-size: large;
+  }
+  
+  .content-Sobremim img{
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 3px solid #224ea7;
+    outline: 2px solid transparent;
+    z-index: 1;
+    margin-left: 300px;
+  }
+
+
+  .footer {
+    background-color: #224ea7;
+    height: 40vh;
+}
+
+.footer .container{
+    background-color: #224ea7;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.logotipo2{
+  
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    color: #ecf3f1;
+    align-items: center;
+}
+
+.contato {
+    
+    width: 50%;
+    margin-top: 50px;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    color: #ecf3f1;
+}
 
 
 
