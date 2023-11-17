@@ -42,9 +42,55 @@ body {
     color: white;
 }
 
+.Elenco .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .TituloElenco{
     color: #224ea7;
     margin: 100px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.box{
+    width: 100%;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.box{
+    padding: 5%;
+    width: 33%;
+    height: auto;
+    margin: 30px;
+    border-bottom: #224ea7 2px solid;
+    border-right: #224ea7 2px solid;
+}
+
+.circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo img {
+    height: 150%; 
+    width: 150%;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
