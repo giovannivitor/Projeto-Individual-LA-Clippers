@@ -13,7 +13,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999px;
+    z-index: 1000px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
     opacity: 0.9;
 }
@@ -83,10 +83,10 @@ body {
 
 
 .tituloHistoria{
-    color: #C8102E;
+    color: #224ea7;
     margin: 0;
     text-align: center;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .imagemBufallo img{
     width: 20%;
@@ -172,6 +172,7 @@ body {
     color: #224ea7;
     text-align: center;
     margin-bottom: 25px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .ImagensElenco img {
@@ -187,7 +188,7 @@ body {
 .botaoVejaMais {
     min-width: 80px;
     height: 30px;
-    color: #224ea7;;
+    color: #224ea7;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -235,6 +236,7 @@ body {
     color: #224ea7;
     text-align: center;
     margin-bottom: 20px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
   
