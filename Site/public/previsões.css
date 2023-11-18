@@ -49,13 +49,13 @@ body {
     font-size: 20px;
     width: 100%;
     background-color: #f5f2f2;
-    height: 100vh;
+    height: 120vh;
 }
 
 .tabela-playoff .conteudo-tabela-playoff {
     display: flex;
-    padding: 140px;
-    margin: 60px;
+    padding: 120px;
+    margin: 30px;
 }
 
 .tabela-playoff .rodada-tabela-playoff {
@@ -89,18 +89,10 @@ body {
     z-index: 1;
 }
 
-.tabela-playoff .par-tabela-playoff:nth-child(even):after {
-    top: 28px;
-}
-
-.tabela-playoff .par-tabela-playoff:nth-child(odd):after {
-    bottom: 28px;
-}
-
 .tabela-playoff .par-tabela-playoff-estilo {
     border: 1px solid #224ea7;
     background-color: white;
-    width: 160px;
+    width: 180px;
     margin-bottom: 20px;
 }
 
@@ -117,23 +109,16 @@ body {
     justify-content: space-around;
 }
 
-.tabela-playoff .grupo-tabela-playoff .par-tabela-playoff-estilo:last-child {
-    margin-bottom: 0px;
-}
-
 .tabela-playoff .grupo-tabela-playoff:after {
     content: '';
     position: absolute;
     top: 34px;
-    bottom: 34px;
+    bottom: 53px;
     right: 0px;
     width: 1px;
     background-color: #224ea7;
 }
 
-.tabela-playoff .grupo-tabela-playoff:last-child {
-    margin-bottom: 0;
-}
 
 .tabela-playoff .jogador-esquerdo-tabela-playoff,
 .tabela-playoff .jogador-direito-tabela-playoff {

@@ -105,7 +105,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 21%;
-    height: 52%;
+    height: 55%;
 }
 
 .Cadastro .container {
@@ -128,7 +128,7 @@ body {
     transition: all 0.3s ease;
     border: 2px solid #224ea7;;
     background: #224ea7;
-    margin: 15px;
+    margin: 5px;
 }
 .botao:hover {
     background: #e5e5e5;
@@ -153,4 +153,16 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.4); 
     z-index: 1; 
+}
+
+.menssagemLogin{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 30px;
+    font-weight: normal;
+    color: #224ea7;
+}
+
+.menssagemLogin a{
+    color: #224ea7;
 }
