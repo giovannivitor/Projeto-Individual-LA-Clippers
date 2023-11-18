@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Vogue Font;
+    src: url(assets/Vogue.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #224ea7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+.navbar .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container ul {
+    width: 530px;
+    font-size: larger;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-right: 180px;
+}
+
+.navbar .container ul a {
+    text-decoration: none;
+    color: white;
+}
