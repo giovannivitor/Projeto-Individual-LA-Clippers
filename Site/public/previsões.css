@@ -1,3 +1,7 @@
+.playoff-table * {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: Vogue Font;
     src: url(assets/Vogue.ttf);
@@ -39,4 +43,140 @@ body {
 .navbar .container ul a {
     text-decoration: none;
     color: white;
+}
+
+.tabela-playoff {
+    font-size: 20px;
+    width: 100%;
+    background-color: #f5f2f2;
+    height: 100vh;
+}
+
+.tabela-playoff .conteudo-tabela-playoff {
+    display: flex;
+    padding: 140px;
+    margin: 60px;
+}
+
+.tabela-playoff .rodada-tabela-playoff {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.tabela-playoff .par-tabela-playoff {
+    position: relative;
+}
+
+.tabela-playoff .par-tabela-playoff:before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    right: -12px;
+    width: 12px;
+    height: 1px;
+    background-color: #224ea7;
+}
+
+.tabela-playoff .par-tabela-playoff:after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 1000px;
+    right: -12px;
+    z-index: 1;
+}
+
+.tabela-playoff .par-tabela-playoff:nth-child(even):after {
+    top: 28px;
+}
+
+.tabela-playoff .par-tabela-playoff:nth-child(odd):after {
+    bottom: 28px;
+}
+
+.tabela-playoff .par-tabela-playoff-estilo {
+    border: 1px solid #224ea7;
+    background-color: white;
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.tabela-playoff .grupo-tabela-playoff {
+    padding-right: 11px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tabela-playoff .grupo-tabela-playoff .par-tabela-playoff-estilo:last-child {
+    margin-bottom: 0px;
+}
+
+.tabela-playoff .grupo-tabela-playoff:after {
+    content: '';
+    position: absolute;
+    top: 34px;
+    bottom: 34px;
+    right: 0px;
+    width: 1px;
+    background-color: #224ea7;
+}
+
+.tabela-playoff .grupo-tabela-playoff:last-child {
+    margin-bottom: 0;
+}
+
+.tabela-playoff .jogador-esquerdo-tabela-playoff,
+.tabela-playoff .jogador-direito-tabela-playoff {
+    min-height: 26px;
+    padding: 3px 5px;
+}
+
+.tabela-playoff .jogador-esquerdo-tabela-playoff {
+    border-bottom: 1px solid #cccccc;
+}
+
+.tabela-playoff .jogador-esquerdo-tabela-playoff:before {
+    content: '';
+    position: absolute;
+    bottom: 27px;
+    left: -12px;
+    width: 12px;
+    height: 1px;
+    background-color: #224ea7;
+}
+
+.tabela-playoff .jogador-direito-tabela-playoff {
+    margin-top: -1px;
+    border-top: 1px solid #afafaf;
+}
+
+.tabela-playoff .terceiro-lugar-tabela-playoff {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 100px;
+}
+
+.tabela-playoff .rodada-tabela-playoff:first-child .jogador-esquerdo-tabela-playoff:before {
+    display: none;
+}
+
+.tabela-playoff .rodada-tabela-playoff:last-child .grupo-tabela-playoff:after {
+    display: none;
+}
+
+.tabela-playoff .rodada-tabela-playoff:last-child .par-tabela-playoff:after,
+.tabela-playoff .rodada-tabela-playoff:last-child .par-tabela-playoff:before {
+    display: none;
 }
