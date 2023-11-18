@@ -94,3 +94,17 @@ body {
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.cabecalho p {
+    color: #224ea7;
+    font-weight: bold;
+}
+
+.cabecalho h1{
+    color: #224ea7;
+    font-size: 100px;
+}
+
+.boxes6 .box3  .cabecalho h1{
+    color: transparent;
+}
