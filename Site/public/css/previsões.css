@@ -49,6 +49,7 @@ body{
     background-color: #f5f2f2;
     height: 100%;
     z-index: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .tabela-playoff h1{
@@ -202,7 +203,7 @@ display: none;
 }
 
 #modal{
-height: 260px;
+height: 250px;
 width: 400px;
 background-color: #f5f2f2;
 position: absolute;
@@ -210,7 +211,7 @@ top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
 display: none;
-border-radius: 5px;
+border-radius: 30px;
 }
 
 #modal img{

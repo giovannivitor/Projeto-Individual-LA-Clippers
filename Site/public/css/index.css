@@ -79,6 +79,7 @@ body {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
+    height: 1190px;
 }
 
 
@@ -185,9 +186,9 @@ body {
 
 }
 
-.botaoVejaMais {
-    min-width: 80px;
-    height: 30px;
+.botaoVejaMais a{
+    min-width: 60px;
+    height: 20px;
     color: #224ea7;
     padding: 5px 10px;
     font-weight: bold;
@@ -201,9 +202,10 @@ body {
     background: #f5f2f2;
     margin-top: -48px;
     margin-left: 80%;
-
+    text-decoration: none;
+    font-weight: bolder;
   }
-  .botaoVejaMais:hover {
+  .botaoVejaMais:hover a{
     background: #224ea7;;
     color: #f5f2f2;
   }

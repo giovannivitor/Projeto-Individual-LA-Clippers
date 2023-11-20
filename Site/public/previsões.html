@@ -38,65 +38,47 @@
     <div id="background">
         <div id="modal">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Mavericks"
-                src="assets/Previsões/dallas-mavericks-logo.png">
-                
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Nuggets"
-                src="assets/Previsões/denver-nuggets-logo.png" alt="">
-                
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Rockets"
-                src="assets/Previsões/houston-rockets-logo.png" alt="">
+            <img onclick="SelecionarTime(this)" data-nome="Mavericks" src="assets/Previsões/dallas-mavericks-logo.png">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Clippers"
+            <img onclick="SelecionarTime(this)" data-nome="Nuggets" src="assets/Previsões/denver-nuggets-logo.png"
+                alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Rockets" src="assets/Previsões/houston-rockets-logo.png"
+                alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Clippers"
                 src="assets/Previsões/los-angeles-clippers-logo.png" alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Lakers"
-                src="assets/Previsões/los-angeles-lakers-logo.png" alt="">
+            <img onclick="SelecionarTime(this)" data-nome="Lakers" src="assets/Previsões/los-angeles-lakers-logo.png"
+                alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Timberwolves"
+            <img onclick="SelecionarTime(this)" data-nome="Timberwolves"
                 src="assets/Previsões/minnesota-timberwolves-logo.png" alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Warriors"
+            <img onclick="SelecionarTime(this)" data-nome="Warriors"
                 src="assets/Previsões/nba-golden-state-warriors-logo.png" alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Grizzlies"
+            <img onclick="SelecionarTime(this)" data-nome="Grizzlies"
                 src="assets/Previsões/nba-memphis-grizzlies-logo.png" alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Kings"
-                src="assets/Previsões/nba-sacramento-kings-logo.png" alt="">
+            <img onclick="SelecionarTime(this)" data-nome="Kings" src="assets/Previsões/nba-sacramento-kings-logo.png"
+                alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Pelicans"
+            <img onclick="SelecionarTime(this)" data-nome="Pelicans"
                 src="assets/Previsões/new-orleans-pelicans-logo.png" alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Thunder"
+            <img onclick="SelecionarTime(this)" data-nome="Thunder"
                 src="assets/Previsões/oklahoma-city-thunder-logo.png" alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Suns"
-                src="assets/Previsões/phoenix-suns-logo.png" alt="">
+            <img onclick="SelecionarTime(this)" data-nome="Suns" src="assets/Previsões/phoenix-suns-logo.png" alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Trail Blazers"
+            <img onclick="SelecionarTime(this)" data-nome="Trail Blazers"
                 src="assets/Previsões/portland-trail-blazers-logo.png" alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Spurs"
-                src="assets/Previsões/san-antonio-spurs-logo.png" alt="">
+            <img onclick="SelecionarTime(this)" data-nome="Spurs" src="assets/Previsões/san-antonio-spurs-logo.png"
+                alt="">
 
-                <img onclick="SelecionarTime(this)" 
-                data-nome="Jazz"
-                src="assets/Previsões/utah-jazz-logo.png" alt="">
+            <img onclick="SelecionarTime(this)" data-nome="Jazz" src="assets/Previsões/utah-jazz-logo.png" alt="">
 
         </div>
     </div>
@@ -119,83 +101,83 @@
                             <button data-id="1" id="time1" onclick="criarModal(this)">SELECIONAR TIME</button>
                         </div>
                         <div id="retangulo2" class="jogador-direito-tabela-playoff">
-                            <select id="selectTime2" name="select">
+                            <select id="selectTime2" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <button id="time2" onclick="criarModal(this)">SELECIONAR TIME</button>
+                            <button data-id="2" id="time2" onclick="criarModal(this)">SELECIONAR TIME</button>
                         </div>
                     </div>
                     <div class="par-tabela-playoff par-tabela-playoff-estilo">
                         <div id="retangulo3" class="jogador-esquerdo-tabela-playoff">
-                            <select name="select">
+                            <select id="selectTime3" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <button id="time3" onclick="criarModal(this)">SELECIONAR TIME</button>
+                            <button data-id="3" id="time3" onclick="criarModal(this)">SELECIONAR TIME</button>
                         </div>
                         <div id="retangulo4" class="jogador-direito-tabela-playoff">
-                            <select name="select">
+                            <select id="selectTime4" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <button id="time4" onclick="criarModal(this)">SELECIONAR TIME</button>
+                            <button data-id="4" id="time4" onclick="criarModal(this)">SELECIONAR TIME</button>
                         </div>
                     </div>
                 </div>
                 <div class="grupo-tabela-playoff" style="gap: 80px;">
                     <div class="par-tabela-playoff par-tabela-playoff-estilo">
                         <div id="retangulo5" class="jogador-esquerdo-tabela-playoff">
-                            <select name="select">
+                            <select id="selectTime5" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <button id="time5" onclick="criarModal(this)">SELECIONAR TIME</button>
+                            <button data-id="5" id="time5" onclick="criarModal(this)">SELECIONAR TIME</button>
                         </div>
                         <div id="retangulo6" class="jogador-direito-tabela-playoff">
-                            <select name="select">
+                            <select id="selectTime6" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <button id="time6" onclick="criarModal(this)">SELECIONAR TIME</button>
+                            <button data-id="6" id="time6" onclick="criarModal(this)">SELECIONAR TIME</button>
                         </div>
                     </div>
                     <div class="par-tabela-playoff par-tabela-playoff-estilo">
                         <div id="retangulo7" class="jogador-esquerdo-tabela-playoff">
-                            <select name="select">
+                            <select id="selectTime7" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <button id="time7" onclick="criarModal(this)">SELECIONAR TIME</button>
+                            <button data-id="7" id="time7" onclick="criarModal(this)">SELECIONAR TIME</button>
 
                         </div>
                         <div id="retangulo8" class="jogador-direito-tabela-playoff">
-                            <select name="select">
+                            <select id="selectTime8" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <button id="time8" onclick="criarModal(this)">SELECIONAR TIME</button>
+                            <button data-id="8" id="time8" onclick="criarModal(this)">SELECIONAR TIME</button>
                         </div>
                     </div>
                 </div>
@@ -204,7 +186,7 @@
                 <div class="grupo-tabela-playoff">
                     <div class="par-tabela-playoff par-tabela-playoff-estilo">
                         <div id="retangulo9" class="jogador-esquerdo-tabela-playoff">
-                            <select name="select">
+                            <select id="selectTime9" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -213,7 +195,7 @@
                             </select>
                         </div>
                         <div id="retangulo10" class="jogador-direito-tabela-playoff">
-                            <select name="select">
+                            <select id="selectTime10" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -352,7 +334,7 @@
         console.log(valor)
         if (valor == 4 && idTime == 1) {
             retangulo9.innerHTML = `
-        <select id="selectTime1" onchange="PassarTime(this)" name="select">
+            <select id="selectTime1" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -361,17 +343,18 @@
                             </select>
                             ${time1.innerHTML}
     `
-            selectTime2.innerHTML = `
+    selectTime2.innerHTML = `
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
     `
-
-    
         }
-        
+
     }
+
+
+
 
 
 </script>
