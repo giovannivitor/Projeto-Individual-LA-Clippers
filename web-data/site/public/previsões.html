@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA Clippers | Previsões</title>
+    <link rel="icon" type="img/png" href="assets/IconLAClippers.png">
+    <link rel="stylesheet" href="css/previsões.css">
+    <style>
+        @font-face {
+            font-family: Vogue Font;
+            src: url(assets/Vogue.ttf);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img style="height: 60px;" src="assets/LogoHeader.png"></a>
+            </div>
+
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="elenco.html">Elenco</a></li>
+                <li><a href="previsões.html">Previsões</a></li>
+                <li><a href="educação.html">Educação</a></li>
+                <li>|</li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="background">
+        <div id="modal">
+
+            <img onclick="SelecionarTime(this)" data-nome="Mavericks" src="assets/Previsões/dallas-mavericks-logo.png">
+
+            <img onclick="SelecionarTime(this)" data-nome="Nuggets" src="assets/Previsões/denver-nuggets-logo.png"
+                alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Rockets" src="assets/Previsões/houston-rockets-logo.png"
+                alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Clippers"
+                src="assets/Previsões/los-angeles-clippers-logo.png" alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Lakers" src="assets/Previsões/los-angeles-lakers-logo.png"
+                alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Timberwolves"
+                src="assets/Previsões/minnesota-timberwolves-logo.png" alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Warriors"
+                src="assets/Previsões/nba-golden-state-warriors-logo.png" alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Grizzlies"
+                src="assets/Previsões/nba-memphis-grizzlies-logo.png" alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Kings" src="assets/Previsões/nba-sacramento-kings-logo.png"
+                alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Pelicans"
+                src="assets/Previsões/new-orleans-pelicans-logo.png" alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Thunder"
+                src="assets/Previsões/oklahoma-city-thunder-logo.png" alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Suns" src="assets/Previsões/phoenix-suns-logo.png" alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Trail Blazers"
+                src="assets/Previsões/portland-trail-blazers-logo.png" alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Spurs" src="assets/Previsões/san-antonio-spurs-logo.png"
+                alt="">
+
+            <img onclick="SelecionarTime(this)" data-nome="Jazz" src="assets/Previsões/utah-jazz-logo.png" alt="">
+
+        </div>
+    </div>
+
+    <div class="tabela-playoff">
+        <h1>Previsões</h1>
+        <div class="conteudo-tabela-playoff">
+
+            <div class="rodada-tabela-playoff">
+                <div class="grupo-tabela-playoff" style="gap: 80px;">
+                    <div class="par-tabela-playoff par-tabela-playoff-estilo">
+                        <div id="retangulo1" class="jogador-esquerdo-tabela-playoff">
+                            <select id="selectTime1" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button data-id="1" id="time1" onclick="criarModal(this)">SELECIONAR TIME</button>
+                        </div>
+                        <div id="retangulo2" class="jogador-direito-tabela-playoff">
+                            <select id="selectTime2" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button data-id="2" id="time2" onclick="criarModal(this)">SELECIONAR TIME</button>
+                        </div>
+                    </div>
+                    <div class="par-tabela-playoff par-tabela-playoff-estilo">
+                        <div id="retangulo3" class="jogador-esquerdo-tabela-playoff">
+                            <select id="selectTime3" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button data-id="3" id="time3" onclick="criarModal(this)">SELECIONAR TIME</button>
+                        </div>
+                        <div id="retangulo4" class="jogador-direito-tabela-playoff">
+                            <select id="selectTime4" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button data-id="4" id="time4" onclick="criarModal(this)">SELECIONAR TIME</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grupo-tabela-playoff" style="gap: 80px;">
+                    <div class="par-tabela-playoff par-tabela-playoff-estilo">
+                        <div id="retangulo5" class="jogador-esquerdo-tabela-playoff">
+                            <select id="selectTime5" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button data-id="5" id="time5" onclick="criarModal(this)">SELECIONAR TIME</button>
+                        </div>
+                        <div id="retangulo6" class="jogador-direito-tabela-playoff">
+                            <select id="selectTime6" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button data-id="6" id="time6" onclick="criarModal(this)">SELECIONAR TIME</button>
+                        </div>
+                    </div>
+                    <div class="par-tabela-playoff par-tabela-playoff-estilo">
+                        <div id="retangulo7" class="jogador-esquerdo-tabela-playoff">
+                            <select id="selectTime7" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button data-id="7" id="time7" onclick="criarModal(this)">SELECIONAR TIME</button>
+
+                        </div>
+                        <div id="retangulo8" class="jogador-direito-tabela-playoff">
+                            <select id="selectTime8" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button data-id="8" id="time8" onclick="criarModal(this)">SELECIONAR TIME</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rodada-tabela-playoff">
+                <div class="grupo-tabela-playoff">
+                    <div class="par-tabela-playoff par-tabela-playoff-estilo">
+                        <div id="retangulo9" class="jogador-esquerdo-tabela-playoff">
+                            <select id="selectTime9" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div id="retangulo10" class="jogador-direito-tabela-playoff">
+                            <select id="selectTime10" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="par-tabela-playoff par-tabela-playoff-estilo">
+                        <div id="retangulo11" class="jogador-esquerdo-tabela-playoff">
+                            <select name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div id="retangulo12" class="jogador-direito-tabela-playoff">
+                            <select name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rodada-tabela-playoff">
+                <div class="grupo-tabela-playoff">
+                    <div class="par-tabela-playoff par-tabela-playoff-estilo">
+                        <div id="retangulo13" class="jogador-esquerdo-tabela-playoff">
+                            <select name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div id="retangulo14" class="jogador-direito-tabela-playoff">
+                            <select name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var Time = "";
+
+    function criarModal(botao) {
+        Time = botao.id;
+        background.style.display = "block"
+        modal.style.display = "block"
+    }
+
+
+    // var vetor = []
+
+    // for( var i = 0; i < vetor.length; i++){
+    //     modal.innerHTML += vetor[i]
+    // }
+
+
+    function SelecionarTime(imagem) {
+        var nome = imagem.getAttribute("data-nome")
+        background.style.display = "none"
+        modal.style.display = "none"
+        document.getElementById(Time).innerHTML = nome
+        retangulo1.style.color = "white"
+
+        if (nome == "Mavericks") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(0, 83, 188,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/dallas-mavericks-logo.png')"
+        }
+        else if (nome == "Nuggets") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(255, 198, 39,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/denver-nuggets-logo.png')"
+        }
+        else if (nome == "Rockets") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(206,17,65,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/houston-rockets-logo.png')"
+        }
+        else if (nome == "Clippers") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(29,66,148,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/los-angeles-clippers-logo.png')"
+        }
+        else if (nome == "Lakers") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(85, 37, 130,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/los-angeles-lakers-logo.png')"
+        }
+        else if (nome == "Timberwolves") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(35, 97, 146,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/minnesota-timberwolves-logo.png')"
+        }
+        else if (nome == "Warriors") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(29, 66, 138,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/nba-golden-state-warriors-logo.png')"
+        }
+        else if (nome == "Grizzlies") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(93, 118, 169,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/nba-memphis-grizzlies-logo.png')"
+        }
+        else if (nome == "Kings") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(91,43,130,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/nba-sacramento-kings-logo.png')"
+        }
+        else if (nome == "Pelicans") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(225, 58, 62,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/new-orleans-pelicans-logo.png')"
+        }
+        else if (nome == "Thunder") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(239, 59, 36,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/oklahoma-city-thunder-logo.png')"
+        }
+        else if (nome == "Suns") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(229, 95, 32,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/phoenix-suns-logo.png')"
+        }
+        else if (nome == "Trail Blazers") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(6, 25, 34,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/portland-trail-blazers-logo.png')"
+        }
+        else if (nome == "Spurs") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(6, 25, 34,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/san-antonio-spurs-logo.png')"
+        }
+        else if (nome == "Jazz") {
+            retangulo1.style.background = "linear-gradient(90deg, rgba(0, 43, 92,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/utah-jazz-logo.png')"
+        }
+    }
+
+
+    function PassarTime(select) {
+        var idTime = time1.getAttribute("data-id")
+        var valor = select.value
+        console.log(valor)
+        if (valor == 4 && idTime == 1) {
+            retangulo9.innerHTML = `
+            <select id="selectTime1" onchange="PassarTime(this)" name="select">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            ${time1.innerHTML}
+    `
+    selectTime2.innerHTML = `
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    `
+        }
+
+    }
+
+
+
+
+
+</script>
