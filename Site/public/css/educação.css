@@ -210,8 +210,8 @@ body {
     flex-direction: row;
 }
 
-h1{
-    margin-top: 0;
+.footer h1{
+    margin-top: -10px;
 }
 
 .logotipo2{
@@ -226,22 +226,22 @@ h1{
 }
 
 .contato {
-    
     width: 50%;
     margin-top: 50px;
     display: flex;
-   
     flex-direction: column;
     align-items: center;
     color: #ecf3f1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.contato li{
+    margin: 15px;
+}
 
-
-
-
-
-
-
-
-
+.contato img{
+    margin: 15px;
+    margin-right: 5px;
+    height: 25px;
+    padding-right: 115px;
+}

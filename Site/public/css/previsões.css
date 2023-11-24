@@ -142,7 +142,7 @@ body{
 .tabela-playoff .jogador-esquerdo-tabela-playoff:before {
     content: '';
     position: absolute;
-    bottom: 40px;
+    bottom: 0px;
     left: -12px;
     width: 12px;
     height: 1px;
@@ -174,15 +174,24 @@ body{
     display: none;
 }
 
+.container-select {
+    position: relative;
+}
+
 select {
     appearance: none;
     padding: 5px;
     border: 0px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 10;
 }
 
 button{
     margin: 0;
     padding: 0;
+    padding-left: 24px;
     border: none;
     font: inherit;
     color: inherit;
@@ -221,5 +230,42 @@ border-radius: 30px;
 .jogador-esquerdo-tabela-playoff {
     background-size: cover !important;
     background-position: center !important;
+position: relative;
     
+}
+
+.jogador-direito-tabela-playoff {
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+}
+
+#retangulo9{
+    text-align: center;
+    color: white;
+}
+
+#retangulo10{
+    text-align: center;
+    color: white;
+}
+#retangulo11{
+    text-align: center;
+    color: white;
+}
+#retangulo12{
+    text-align: center;
+    color: white;
+}
+#retangulo13{
+    text-align: center;
+    color: white;
+}
+#retangulo14{
+    text-align: center;
+    color: white;
+}
+
+.container-select{
+    text-align: center;
 }

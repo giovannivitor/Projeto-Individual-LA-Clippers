@@ -13,7 +13,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000px;
+    z-index: 1000;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
     opacity: 0.9;
 }
@@ -204,11 +204,14 @@ body {
     margin-left: 80%;
     text-decoration: none;
     font-weight: bolder;
+    z-index: 0 ;
   }
   .botaoVejaMais:hover a{
     background: #224ea7;;
     color: #f5f2f2;
+    z-index: 0 ;
   }
+
 
   .iconeNoticias{
     display: flex;
@@ -254,20 +257,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30%;
-    margin-left: 150px;
+    width: 75%;
+    margin-left: 130px;
     font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   .content-Sobremim img{
-    width: 50vw;
-    height: 50vh;
+    height: 400px;
     border-radius: 10%;
     object-fit: cover;
     border: 3px solid #224ea7;
-    outline: 2px solid transparent;
     z-index: 1;
-    margin-left: 300px;
+    margin-left: 200px;
   }
 
 
@@ -283,8 +285,8 @@ body {
     flex-direction: row;
 }
 
-h1{
-    margin-top: 0;
+.footer h1{
+    margin-top: -10px;
 }
 
 .logotipo2{
@@ -299,18 +301,25 @@ h1{
 }
 
 .contato {
-    
     width: 50%;
     margin-top: 50px;
     display: flex;
-   
     flex-direction: column;
     align-items: center;
     color: #ecf3f1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.contato li{
+    margin: 15px;
+}
 
-
+.contato img{
+    margin: 15px;
+    margin-right: 5px;
+    height: 25px;
+    padding-right: 115px;
+}
 
 
 
