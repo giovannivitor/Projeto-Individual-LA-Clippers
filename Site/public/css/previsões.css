@@ -56,10 +56,20 @@ body{
     color: #224ea7;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    padding-top: 110px;
+    padding-top: 100px;
     font-size: xx-large;
 
 }
+
+.tabela-playoff h4{
+    color: #224ea7;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: large;
+    opacity: 0.8;
+
+}
+
 .tabela-playoff .conteudo-tabela-playoff {
     display: flex;
     margin-left: 100px;

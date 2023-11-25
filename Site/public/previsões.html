@@ -84,6 +84,7 @@
 
     <div class="tabela-playoff">
         <h1>Previsões</h1>
+        <h4>Temporada 2023-2024</h4>
         <div class="conteudo-tabela-playoff">
 
             <div class="rodada-tabela-playoff">
@@ -357,27 +358,30 @@
         var valor = select.value
         document.getElementById(Time).style.color = "white"
 
-        var nometime1 = selectTime1.getAttribute("data-nome-time")
-        var nometime2 = selectTime2.getAttribute("data-nome-time")
-        var nometime3 = selectTime3.getAttribute("data-nome-time")
-        var nometime4 = selectTime4.getAttribute("data-nome-time")
-        var nometime5 = selectTime5.getAttribute("data-nome-time")
-        var nometime6 = selectTime6.getAttribute("data-nome-time")
-        var nometime7 = selectTime7.getAttribute("data-nome-time")
-        var nometime8 = selectTime8.getAttribute("data-nome-time")
-        var nometime9 = selectTime9.getAttribute("data-nome-time")
-        var nometime10 = selectTime10.getAttribute("data-nome-time")
+        
+        var nometime2 = selectTime2.getAttribute("data-nome-time");
+        var nometime3 = selectTime3.getAttribute("data-nome-time");
+        var nometime4 = selectTime4.getAttribute("data-nome-time");
+        var nometime5 = selectTime5.getAttribute("data-nome-time");
+        var nometime6 = selectTime6.getAttribute("data-nome-time");
+        var nometime7 = selectTime7.getAttribute("data-nome-time");
+        var nometime8 = selectTime8.getAttribute("data-nome-time");
+        var nometime9 = selectTime9.getAttribute("data-nome-time");
+        var nometime10 = selectTime10.getAttribute("data-nome-time");
         // var nometime11 = selectTime11.getAttribute("data-nome-time")
         // var nometime12 = selectTime12.getAttribute("data-nome-time")
         // var nometime13 = selectTime13.getAttribute("data-nome-time")
         // var nometime14 = selectTime14.getAttribute("data-nome-time")
         // var nometime15 = selectTime15.getAttribute("data-nome-time")
+        if(selectTime1){
+            var nometime1 = selectTime1.getAttribute("data-nome-time");
+        }
 
-        console.log(valor)
         if (valor == 4 && nometime1 == "Mavericks") {
+            retangulo9.setAttribute("data-nome-time","Mavericks")
             retangulo9.style.background = "linear-gradient(90deg, rgba(0, 83, 188,0.9) 0%, rgba(0,0,0,0.5) 100%), url('assets/Previsões/dallas-mavericks-logo.png')"
             retangulo9.innerHTML = `
-            <select id="selectTime1" onchange="PassarTime(this)" name="select">
+            <select id="selectTime9" onchange="PassarTime(this)" name="select">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>

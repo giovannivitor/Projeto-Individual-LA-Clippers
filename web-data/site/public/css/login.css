@@ -167,16 +167,6 @@ body {
 .mensagemCadastro a{
     color: #224ea7;
 }
-
-.loading-div {
-    width: 50px;
-    display: none;
-  }
-  
-  .loading-div img {
-    height: 50px;
-    width: 50px;
-  }
   
   #div_erros_login {
     display: none
@@ -189,14 +179,15 @@ body {
   
   .card_erro {
     display: none;
-    background-color: #fff;
+    background-color: #e5e5e5;
     color: black;
     width: 230px;
     position: fixed;
-    border-radius: 4px;
-    border: #e6005a 3px solid;
+    border-radius: 15px;
+    border: #224ea7 3px solid;
     padding: 10px;
     margin-right: 10%;
+    margin-top: 100px;
   }
   
   .card_erro #mensagem_erro{

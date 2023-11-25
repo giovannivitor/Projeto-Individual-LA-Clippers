@@ -72,7 +72,6 @@
 
                     </div>
                     <div id="div_aguardar" class="loading-div">
-                        <img src="./assets/circle-loading.gif" id="loading-gif" />
                       </div>
               
                       <div id="div_erros_login"></div>
@@ -102,7 +101,7 @@
       ) {
         cardErro.style.display = "block";
         mensagem_erro.innerHTML =
-          "(Mensagem de erro para todos os campos em branco)";
+          "Mensagem de erro para todos os campos em branco";
   
   
         finalizarAguardar();
@@ -110,14 +109,14 @@
       } else if (nomeVar.length <= 1) {
         cardErro.style.display = "block";
         mensagem_erro.innerHTML =
-          "(Mensagem de erro para o campo Nome)";
+          "Mensagem de erro para o campo Nome";
   
         finalizarAguardar();
         return false;
       } else if (emailVar.indexOf('@') == -1 || emailVar.indexOf('.') == -1) {
         cardErro.style.display = "block";
         mensagem_erro.innerHTML =
-          "(Mensagem de erro para o campo email)";
+          "Mensagem de erro para o campo email";
   
         finalizarAguardar();
         return false;
@@ -125,19 +124,20 @@
       } else if (senhaVar.length <= 6) {
         cardErro.style.display = "block";
         mensagem_erro.innerHTML =
-          "(Mensagem de erro para o campo Senha)";
+          "Mensagem de erro para o campo Senha";
   
         finalizarAguardar();
         return false;
       } else if (confirmacaoSenhaVar != senhaVar) {
         cardErro.style.display = "block";
         mensagem_erro.innerHTML =
-          "(Mensagem de erro para o campo Confirmar Senha)";
+          "Mensagem de erro para o campo Confirmar Senha";
   
         finalizarAguardar();
         return false;
       } else {
         setInterval(sumirMensagem, 5000)
+        window.location = "./login.html";
       }
   
   
