@@ -8,7 +8,20 @@ CREATE TABLE usuario (
 	email VARCHAR(45),
 	senha VARCHAR(45));
     
+CREATE TABLE timeCampeao (
+  idtime INT PRIMARY KEY AUTO_INCREMENT,
+  nometimecampeao varchar(45)
+);
+    
 
-SELECT * FROM usuario;
--- CREATE TABLE previsoes (idPrevisoes INT PRIMARY KEY AUTO_INCREMENT,placar VARCHAR(45),nomeTime VARCHAR(45),fkUsuario INT,FOREIGN KEY (fkUsuario) REFERENCES usuario(id),fktimeCampeao INT,FOREIGN KEY (fktimeCampeao) REFERENCES timeCampeao(id));
+ CREATE TABLE previsoes (
+idPrevisoes INT PRIMARY KEY AUTO_INCREMENT,
+placar VARCHAR(45),
+nomeTime VARCHAR(45),
+fkUsuario INT,
+FOREIGN KEY (fkUsuario) REFERENCES usuario(id),
+fktimeCampeao INT,
+FOREIGN KEY (fktimeCampeao) REFERENCES timeCampeao(idtime));
+
+select * from previsoes;
 
