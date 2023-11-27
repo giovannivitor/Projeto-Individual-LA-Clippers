@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Vogue Font;
+    src: url(assets/Vogue.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #224ea7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+.navbar .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container ul {
+    width: 530px;
+    font-size: larger;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-right: 180px;
+}
+
+.navbar .container ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.metricas{
+    background-color: #f5f2f2;
+    height: 100%;
+    background-size: cover;
+}
+
+.Titulo h1{
+    color: #224ea7;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    padding-top: 100px;
+    font-size: xx-large;
+}
+
+.Titulo h4{
+    color: #224ea7;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: large;
+    opacity: 0.8;
+}
+
+.grafico{
+        height: 400px;
+        border-radius: 100px;
+        border: 3px solid #224ea7;
+        z-index: 1;
+        margin: 150px;
+        margin-top: 50px;
+}
