@@ -2,10 +2,6 @@ CREATE DATABASE Clippers;
 
 USE Clippers;
 
-CREATE DATABASE Clippers;
-
-USE Clippers;
-
 CREATE TABLE usuario (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(45),
@@ -24,11 +20,14 @@ CREATE TABLE previsoes (
 CREATE TABLE timeCampeao (
     idtime INT PRIMARY KEY AUTO_INCREMENT,
     nometimecampeao VARCHAR(45),
+	nomeTimeVice VARCHAR(45),
     fkid INT,
     FOREIGN KEY (fkid) REFERENCES usuario(id),
     fkPrevisoes INT,
     FOREIGN KEY (fkPrevisoes) REFERENCES previsoes(idPrevisoes)
 );
+
+-- Exibir dados das tabelas
 
 select * from usuario;
 select * from previsoes;
@@ -39,6 +38,10 @@ SELECT usuario.id, usuario.nome, usuario.email, timeCampeao.idtime, timeCampeao.
 FROM usuario
 JOIN timeCampeao ON usuario.id = timeCampeao.fkid;
 
+-- Exibir time Vice-Campeão
+SELECT usuario.id, usuario.nome, usuario.email, timeCampeao.idtime, timeCampeao.nomeTimeVice
+FROM usuario
+JOIN timeCampeao ON usuario.id = timeCampeao.fkid;
 
 
 

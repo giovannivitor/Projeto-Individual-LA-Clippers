@@ -6,6 +6,7 @@
     <title>LA Clippers | Métricas</title>
     <link rel="icon" type="img/png" href="assets/IconLAClippers.png">
     <link rel="stylesheet" href="css/metricas.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -34,9 +35,49 @@
                 <h4>Temporada 2023-2024</h4>
             </div>
             <div class="grafico">
-                
+                    <canvas id="myChart2" style="position: relative; height: 40vh; width: 40vw;"></canvas>
             </div>
         </div>
     </div>
 </body>
 </html>
+<script>
+    const labels2 = [
+        'Mavericks',
+        'Nuggets',
+        'Rockets',
+        'Clippers',
+        'Lakers',
+        'Timberwolves',
+        'Warriors',
+        'Grizzlies'
+    ];
+    const data2 = {
+        labels: labels2,  
+        datasets: [{
+            label: 'Times Semifinalistas',
+            data: [22, 24, 27, 23, 20, 18],
+            backgroundColor: '#C8102E',
+            borderColor: '#C8102E',
+        },
+        {
+            label: 'Vice Campeões',
+            data: [90, 89, 93, 87, 88, 82],
+            backgroundColor: '#224ea7',
+            borderColor: '#224ea7',
+        }
+        ]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data2,  
+        options: {}
+    };
+
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        config
+    );
+
+</script>
