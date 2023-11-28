@@ -109,7 +109,7 @@ body{
 .tabela-playoff .par-tabela-playoff-estilo {
     border: 1px solid #224ea7;
     background-color: white;
-    width: 180px;
+    width: 300px;
     margin-bottom: 20px;
 }
 
@@ -222,7 +222,7 @@ display: none;
 
 #modal{
 height: 250px;
-width: 400px;
+width: 250px;
 background-color: #f5f2f2;
 position: absolute;
 top: 50%;
@@ -233,7 +233,7 @@ border-radius: 30px;
 }
 
 #modal img{
-    height: 75px;
+    height: 80px;
 }
 
 .jogador-esquerdo-tabela-playoff {
@@ -277,4 +277,10 @@ position: relative;
 
 .container-select{
     text-align: center;
+}
+
+.dadosCampeao{
+    font-size: x-large;
+    color: #224ea7;
+    padding-left: 1000px;
 }
