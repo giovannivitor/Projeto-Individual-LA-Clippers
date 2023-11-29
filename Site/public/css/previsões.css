@@ -279,7 +279,8 @@ position: relative;
     text-align: center;
 }
 
-.dadosCampeao{
+.dadosCampeao a{
+    border-radius: 10px;
     font-size: x-large;
     color: #224ea7;
     padding-left: 1000px;

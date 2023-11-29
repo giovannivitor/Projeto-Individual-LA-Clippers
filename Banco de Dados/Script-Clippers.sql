@@ -11,7 +11,6 @@ CREATE TABLE usuario (
 
 CREATE TABLE previsoes (
     idPrevisoes INT PRIMARY KEY AUTO_INCREMENT,
-    placar VARCHAR(45),
     nomeTime VARCHAR(45),
     fkid INT,
     FOREIGN KEY (fkid) REFERENCES usuario(id)
@@ -20,17 +19,12 @@ CREATE TABLE previsoes (
 CREATE TABLE timeCampeao (
     idtime INT PRIMARY KEY AUTO_INCREMENT,
     nometimecampeao VARCHAR(45),
-	nomeTimeVice VARCHAR(45),
     fkid INT,
-    FOREIGN KEY (fkid) REFERENCES usuario(id),
-    fkPrevisoes INT,
-    FOREIGN KEY (fkPrevisoes) REFERENCES previsoes(idPrevisoes)
+    FOREIGN KEY (fkid) REFERENCES usuario(id)
 );
-
 -- Exibir dados das tabelas
 
 select * from usuario;
-select * from previsoes;
 select * from timeCampeao;
 
 -- Exibir time favorito ao titulo de acordo com o usuario
@@ -38,11 +32,9 @@ SELECT usuario.id, usuario.nome, usuario.email, timeCampeao.idtime, timeCampeao.
 FROM usuario
 JOIN timeCampeao ON usuario.id = timeCampeao.fkid;
 
--- Exibir time Vice-Campeão
-SELECT usuario.id, usuario.nome, usuario.email, timeCampeao.idtime, timeCampeao.nomeTimeVice
-FROM usuario
-JOIN timeCampeao ON usuario.id = timeCampeao.fkid;
 
+INSERT INTO timeCampeao (nometimecampeao, fkid)  values 
+			('Mavericks',1);
 
 
 
